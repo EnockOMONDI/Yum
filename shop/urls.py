@@ -9,7 +9,6 @@ app_name = 'shop'
 urlpatterns = [
    
     url(r'^$',  views.home, name='home'),
-    url(r'^2/', views.home2, name='home2'),
     url(r'^vendorrequest/', views.vendorrequest, name='vendorrequest'),
     url(r'^Vendorfaqs/', views.Vendorfaqs, name='Vendorfaqs'),
     url(r'^log/', views.log, name='log'),
