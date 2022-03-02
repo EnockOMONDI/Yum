@@ -25,7 +25,7 @@ def update_password(request):
             if request.user.check_password(old_password) == False:
                 response_data = {'status' : 'failure', 'message' : 'invalid old password' }
                 return HttpResponse(json.dumps(response_data), content_type="application/json")
-            if password is  None or request is None:
+            if password is '' or request is '':
                 response_data = {'status' : 'failure', 'message' : 'blank passwords are not acceptable' }
                 return HttpResponse(json.dumps(response_data), content_type="application/json")
             if password != repeat_password:
