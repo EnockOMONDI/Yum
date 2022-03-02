@@ -53,7 +53,7 @@ def subcategory_list(request, subcategory_slug=None):
 
     }
     return render(request, 'shop/product/sublist.html', context)
-
+#
 
 def minicategory_list(request, minicategory_slug=None):
     minicategory = None
