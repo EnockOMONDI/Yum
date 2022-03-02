@@ -109,53 +109,7 @@ def product_detail(request, id, slug):
   })
 
 # homepage view
-def home2(request, category_slug=None, subcategory_slug=None, minicategory_slug=None):
-    category = None
-    subcategory = None
-    minicategory = None
-    categories = Category.objects.all()
-    subcategories = SubCategory.objects.all()
-    minicategories = MiniCategory.objects.all()
-    products = Product.objects.filter(available=True)
-    if category_slug:
-        category = get_object_or_404(Category, slug=category_slug)
-        subcategories = SubCategory.objects.filter(category=category)
 
-    # if subcategory_slug:
-    #     subcategory = get_object_or_404(SubCategory, slug=subcategory_slug)
-    #     minicategories = MiniCategory.objects.filter(available=True)
-
-    context = {
-        'category': category,
-        'categories': categories,
-        'products': products,
-        'subcategories': subcategories,
-        'minicategories ': minicategories,
-        'subcategory': subcategory,
-        'minicategory': minicategory,
-    }
-
-    return render(request, 'shop/foodstore/homepage/index.html',   context={
-        'category': category,
-        'categories': categories,
-        'products': products,
-        'subcategories': subcategories,
-        'minicategories': minicategories,
-        'subcategory': subcategory,
-        'minicategory': minicategory,
-
-        'tab': 'shop',
-        'local_css_urls': [ "assets/css/libs.min.css",
-                            "assets/vendor/@fortawesome/fontawesome-free/css/all.min.css",
-                            "assets/css/foodsto.mine209.css?v=1.0.0"],
-        'local_js_urls':  [
-                        "assets/js/libs.min.js",
-                        "assets/vendor/gsap/gsap.min.js",
-                        "assets/vendor/gsap/ScrollTrigger.min.js",
-                        "assets/js/app.js",
-                        "assets/js/gsap.js",
-                        "assets/js/slider.js"]
-    })
 def home(request, category_slug=None, subcategory_slug=None, minicategory_slug=None):
     category = None
     subcategory = None
