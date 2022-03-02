@@ -63,7 +63,7 @@ class RegisterForm(forms.Form):
     #------------
     def clean_email(self):
         email = self.cleaned_data['email']
-        if email is not None and email is not "":
+        if email is not None:
             try:
                 User.objects.get(email=email)
                 raise forms.ValidationError("Email already exists.")
