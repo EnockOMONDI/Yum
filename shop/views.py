@@ -19,7 +19,7 @@ def product_list(request, category_slug=None):
         category = get_object_or_404(Category, slug=category_slug)
         products = Product.objects.filter(category=category)
 
-    return render(request, 'shop/foodstore/product/list.html',   context={
+    return render(request, 'shop/yummytummy/product/list.html',   context={
         'category': category,
         'categories': categories,
         'products': products,
