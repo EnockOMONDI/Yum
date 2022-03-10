@@ -30,6 +30,7 @@ urlpatterns = [
    
 
       # Django JET dashboard URLS
+    re_path(r'^jet/', include('jet.urls', 'jet')),  
     re_path('admin/', admin.site.urls),
     re_path(r'', include('registration.urls')),
     re_path(r'', include('login.urls')),
