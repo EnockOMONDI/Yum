@@ -19,7 +19,7 @@ def product_list(request, category_slug=None):
         category = get_object_or_404(Category, slug=category_slug)
         products = Product.objects.filter(category=category)
 
-    return render(request, 'shop/yummytummy/product/list.html',   context={
+    return render(request, 'yummytummy/product/list.html',   context={
         'category': category,
         'categories': categories,
         'products': products,
@@ -52,7 +52,7 @@ def subcategory_list(request, subcategory_slug=None):
         'products': products,
 
     }
-    return render(request, 'shop/product/sublist.html', context)
+    return render(request, 'product/sublist.html', context)
 #
 
 def minicategory_list(request, minicategory_slug=None):
@@ -71,7 +71,7 @@ def minicategory_list(request, minicategory_slug=None):
 
     }
 
-    return render(request, 'shop/product/minilist.html', context)
+    return render(request, 'product/minilist.html', context)
 
 # @login_required(login_url='/accounts/login/')
 # def product_detail(request, id, slug):
@@ -81,7 +81,7 @@ def minicategory_list(request, minicategory_slug=None):
 #         'product': product,
 #         'cart_product_form': cart_product_form
 #     }
-#     return render(request, 'shop/product/detail.html', context)
+#     return render(request, 'product/detail.html', context)
 
 @login_required(login_url ='login:login_redirect')
 def product_detail(request, id, slug):
@@ -91,7 +91,7 @@ def product_detail(request, id, slug):
         'product': product,
         'cart_product_form': cart_product_form
     }
-    return render(request, 'shop/yummytummy/product/productdetail.html',
+    return render(request, 'foodstore/product/productdetail.html',
                   context={
                       'product': product,
                       'cart_product_form': cart_product_form,
@@ -136,7 +136,7 @@ def home(request, category_slug=None, subcategory_slug=None, minicategory_slug=N
         'minicategory': minicategory,
     }
 
-    return render(request, 'shop/yummytummy/homepage/index.html',   context={
+    return render(request, 'yummytummy/homepage/index.html',   context={
         'category': category,
         'categories': categories,
         'products': products,
@@ -152,7 +152,7 @@ def home(request, category_slug=None, subcategory_slug=None, minicategory_slug=N
 
 
 def log(request):
-    return render(request, 'shop/product/login2.html', {
+    return render(request, 'product/login2.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -179,7 +179,7 @@ def log(request):
 
 
 def vendorrequest(request):
-    return render(request, 'shop/homepage/page/vendorrequest.html', {
+    return render(request, 'homepage/page/vendorrequest.html', {
         'tab': 'vendor',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -208,7 +208,7 @@ def vendorrequest(request):
 
 
 def Vendorfaqs(request):
-    return render(request, 'shop/homepage/page/vendorfaqs.html', {
+    return render(request, 'homepage/page/vendorfaqs.html', {
         'tab': 'Vendorfaqs',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -237,15 +237,15 @@ def Vendorfaqs(request):
 
 
 def homeaccesories(request):
-    return render(request, 'shop/product/homeaccesories.html')
+    return render(request, 'product/homeaccesories.html')
 
 
 def decorbeauty(request):
-    return render(request, 'shop/product/decorbeauty.html')
+    return render(request, 'product/decorbeauty.html')
 
 
 def about(request):
-    return render(request, 'shop/product/about.html', {
+    return render(request, 'product/about.html', {
         'tab': 'Vendorfaqs',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -274,11 +274,11 @@ def about(request):
 
 
 def mens(request):
-    return render(request, 'shop/product/mens.html')
+    return render(request, 'product/mens.html')
 
 
 def contact(request):
-    return render(request, 'shop/product/contact.html', {
+    return render(request, 'product/contact.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -305,11 +305,11 @@ def contact(request):
 
 
 def womens(request):
-    return render(request, 'shop/product/womens.html')
+    return render(request, 'product/womens.html')
 
 
 def contact(request):
-    return render(request, 'shop/product/contact.html', {
+    return render(request, 'product/contact.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -336,11 +336,11 @@ def contact(request):
 
 
 def womens(request):
-    return render(request, 'shop/product/womens.html')
+    return render(request, 'product/womens.html')
 
 
 def contact(request):
-    return render(request, 'shop/product/contact.html', {
+    return render(request, 'product/contact.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -367,11 +367,11 @@ def contact(request):
 
 
 def womens(request):
-    return render(request, 'shop/product/womens.html')
+    return render(request, 'product/womens.html')
 
 
 def contact(request):
-    return render(request, 'shop/product/contact.html', {
+    return render(request, 'product/contact.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -398,11 +398,11 @@ def contact(request):
 
 
 def womens(request):
-    return render(request, 'shop/product/womens.html')
+    return render(request, 'product/womens.html')
 
 
 def contact(request):
-    return render(request, 'shop/product/contact.html', {
+    return render(request, 'product/contact.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -429,11 +429,11 @@ def contact(request):
 
 
 def womens(request):
-    return render(request, 'shop/product/womens.html')
+    return render(request, 'product/womens.html')
 
 
 def contact(request):
-    return render(request, 'shop/product/contact.html', {
+    return render(request, 'product/contact.html', {
         'tab': 'registration',
         'local_css_urls': ["css3/easy-responsive-tabs.css",
                            "css3/material-kit.min1036.css",
@@ -460,7 +460,7 @@ def contact(request):
 
 
 def womens(request):
-    return render(request, 'shop/product/womens.html')
+    return render(request, 'product/womens.html')
 
 
 def client_price(request, id, slug):
@@ -492,7 +492,7 @@ def client_price(request, id, slug):
                     productprice=product.price
                     request.session['productprice'] = float(client_price)
                     print(productprice)
-                    return render(request, 'shop/product/clientsuccess.html',{
+                    return render(request, 'product/clientsuccess.html',{
                         'form': form,
                     'product': product,
                     'cart_product_form': cart_product_form,
@@ -526,7 +526,7 @@ def client_price(request, id, slug):
                     productprice=product.price
                     request.session['productprice'] = float(client_price)
                     print(productprice)
-                    return render(request, 'shop/product/clientsuccess.html',{
+                    return render(request, 'product/clientsuccess.html',{
                     'form': form,
                     'product': product,
                     'cart_product_form': cart_product_form,
@@ -556,7 +556,7 @@ def client_price(request, id, slug):
         else:
                 messages.info(
                     request, ('Unfortunately ou are not eligible for any loan!'))
-        return render(request, 'shop/product/client.html',{
+        return render(request, 'product/client.html',{
             'form': form,
             'product': product,
             'cart_product_form': cart_product_form,
@@ -592,7 +592,7 @@ def client_price(request, id, slug):
         # if a GET (or any other method) we'll create a blank form
     else:
         form = NegotiateForm()
-        return render(request, 'shop/product/client.html', {
+        return render(request, 'product/client.html', {
         'form': form,
         'product': product,
         'local_css_urls': ["css3/easy-responsive-tabs.css",
@@ -651,7 +651,7 @@ def negotiate(request, id, slug):
     else:
         messages.info(
             request, ('Unfortunately ou are not eligible for any loan!'))
-    return render(request, 'shop/discount.html',{
+    return render(request, 'discount.html',{
     'product': product,
     'price1':price1,
     'price2':price2,

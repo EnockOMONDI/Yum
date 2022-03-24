@@ -95,7 +95,7 @@ def client_price(request, id, slug):
         else:
                 messages.info(
                     request, ('Unfortunately ou are not eligible for any loan!'))
-        return render(request, 'shop/product/client.html',{
+        return render(request, 'product/client.html',{
             'form': form,
             'product': product,
             'price1':price1,
