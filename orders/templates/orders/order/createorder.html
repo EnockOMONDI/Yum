@@ -281,10 +281,12 @@
           </div>
           <form style="margin:10%;margin-top:0;font-size:15px;"action="." method="post">
             {% csrf_token %}
-            {{ form.as_p }}<br>
+            <!-- {{ form.as_p }}<br> -->
             <div class="social-btn" >
                     {% if cart|length > 0 %}
-            <input type="submit" class="btn btn-primary btn-lg" value="Proceed to payment">             
+                  <button class="btn btn-white btn-lg "> <a  href="
+                        https://flutterwave.com/pay/yummytummy" > Complete Order </a></button>   
+            <!-- <input type="submit" class="btn btn-primary btn-lg" value="Proceed to payment">              -->
         </div>
         </form>
         {% else %}
