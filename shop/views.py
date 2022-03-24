@@ -91,7 +91,7 @@ def product_detail(request, id, slug):
         'product': product,
         'cart_product_form': cart_product_form
     }
-    return render(request, 'shop/foodstore/product/productdetail.html',
+    return render(request, 'shop/yummytummy/product/productdetail.html',
                   context={
                       'product': product,
                       'cart_product_form': cart_product_form,
