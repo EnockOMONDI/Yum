@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'bootstrap4',
     'pyuploadcare.dj',
     'orders.apps.OrdersConfig',
-    # 'jet',
+    'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
