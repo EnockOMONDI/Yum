@@ -7,7 +7,7 @@ body {
     box-shadow: none;
 }
 .form-control:focus {
-    border-color: #fd8c04;
+    border-color: #361500;
 }
 .form-control, .btn {
     border-radius: 50px;
@@ -26,7 +26,7 @@ body {
     padding: 40px;
 }
 .signup-form a {
-    color: #fd8c04;
+    color: #361500;
 }    
 .signup-form h2 {
     text-align: center;
@@ -49,11 +49,11 @@ body {
 }
 .signup-btn {
     text-align: center;
-    border-color: #fd8c04;
+    border-color: #361500;
     transition: all 0.4s;
 }
 .signup-btn:hover {
-    background: #fd8c04;
+    background: #361500;
     opacity: 0.8;
 }
 .or-seperator {
@@ -92,15 +92,15 @@ body {
     opacity: 0.8;
 }
 .social-btn .btn-primary {
-    background: #fd8c04;
+    background: #361500;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
 }
 .social-btn .btn-info {
-    background: #fd8c04;
+    background: #361500;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
 }
 .social-btn .btn-danger {
-    background: #fd8c04;
+    background: #361500;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
 }
 .social-btn .btn i {

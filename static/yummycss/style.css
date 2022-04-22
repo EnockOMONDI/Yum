@@ -6143,35 +6143,33 @@ ul{
 }
 .coffee_about_content{
 	position: relative;
-	padding: 45px 40px 52px;
+	padding: 45px 45px 52px;
 	border-radius: 10px;
 	display: inline-block;
 	vertical-align: middle;
-	text-align: center;
-	margin-top: 120px;
-	margin-left: -100px;
-	width: 663px;
-	background-color: #3c3f48;
+	margin-top: 70px;
+	margin-left: -40px;
+	width: 700px;
 }
 .coffee_about_content h6{
-	font-size: 30px;
-	color: #ffffff;
+	font-size: 25px;
+	color: #125C13;
 	line-height: 42px;
-	text-transform: capitalize;
+
 	font-weight: 500;
 }
 .coffee_about_content h5{
-	font-size: 42px;
-	color: #ffc539;
+	font-size: 32px;
+	color:#125C13;
 	line-height: 42px;
-	text-transform: capitalize;
+	
 	margin-bottom: 26px;
 	font-weight: 600;
 }
 .coffee_about_content p{
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 30px;
-	color: #ffffff;
+	color: #000000;
 	margin: 0;
 }
 .coffee_about_content a{
@@ -6228,6 +6226,7 @@ ul{
 }
 .coffee_service_content > p.mb_4{
 	margin-bottom: 30px;
+	
 }
 .coffee_service_content > a{
 	font-size: 20px;
@@ -6238,7 +6237,7 @@ ul{
 }
 .coffee_service_section{
 	padding: 31px 40px 36px;
-	background-color: #3c3f48;
+	background-color: #361500;
 	border-radius: 10px;
 	width: 663px;
 	position: relative;
@@ -6280,7 +6279,7 @@ ul{
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-	background-color: #2b2d34;
+	background-color: #361500;
 	margin: 0 auto 10px;
 }
 .coffee_service_block .service_icon > h3{
@@ -6743,7 +6742,7 @@ ul{
 	line-height: 50px;
 	border-radius: 30px;
 	padding-right: 20px;
-	background-color: #ec5e5e;
+	background-color: #361500;
 }
 .footer_support_wrapper .footer_service_section .contact_label > span{
 	width: 50px;
@@ -6752,15 +6751,15 @@ ul{
 	margin-right: 10px;
 	text-align: center;
 	border-radius: 50%;
-	background-color: #de5a5a;
+	background-color: #361500;
 	float: left;
 	display: inline-block;
 }
 .footer_support_wrapper .footer_service_section .contact_label:last-child{
-	background-color: #f39c11;
+	background-color: #361500;
 }
 .footer_support_wrapper .footer_service_section .contact_label:last-child > span{
-	background-color: #e5930f;
+	background-color: #361500;
 }
 .footer_support_wrapper .footer_service_section .contact_label > h4{
 	font-size: 22px;
