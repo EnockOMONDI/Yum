@@ -38,4 +38,5 @@ urlpatterns = [
     re_path(r'cart', include('cart.urls')),
     re_path(r'orders/', include('orders.urls')),
     re_path(r'', include('shop.urls')),
+    re_path(r'blogs/', include('blog.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'registration',
     'login',
     'account',
+    'blog',
     'captcha'
  
 
