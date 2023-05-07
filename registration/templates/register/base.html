@@ -11,7 +11,8 @@
         <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     
         <link rel="shortcut icon" type="image/png" href="{% static 'images/u.png' %}"/>
-     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
         {% for local_css_url in local_css_urls %}
         <link rel="stylesheet" href="{% static local_css_url %}">
     {% endfor %}
